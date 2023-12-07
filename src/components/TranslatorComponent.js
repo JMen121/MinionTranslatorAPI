@@ -1,7 +1,13 @@
-const TranslatorComponent = () => {
+import TranslatorForm from "./TranslatorForm";
+
+const TranslatorComponent = ({title, image, language, setLanguage, translateText}) => {
+
+    setLanguage(language);
+
     return ( 
         <>
-            <h2>This is a component</h2>
+            <h2>{title}</h2>
+            <TranslatorForm translateText={translateText}/>
         </> 
     );
 }

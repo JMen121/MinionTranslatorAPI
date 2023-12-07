@@ -33,20 +33,34 @@ const TranslatorContainer = () => {
             {
 
                 path: "/shakespeare",
-                element: <TranslatorComponent />
+                element: <TranslatorComponent 
+                title={"Shakespeare Translator"}
+                language={"shakespeare"}
+                setLanguage={setLanguage}
+                translateText={translateText}
+                />
 
             },
 
             {
 
                 path: "/pirate",
-                element: <TranslatorComponent />
-
+                element: <TranslatorComponent 
+                title={"Pirate Translator"}
+                language={"pirate"}
+                setLanguage={setLanguage}
+                translateText={translateText}
+                />
             },
             {
 
                 path: "/minions",
-                element: <TranslatorComponent />
+                element: <TranslatorComponent 
+                title={"Minion Translator"}
+                language={"minion"}
+                setLanguage={setLanguage}
+                translateText={translateText}
+                />
 
             }
 
