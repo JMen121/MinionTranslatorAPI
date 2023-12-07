@@ -21,19 +21,10 @@ const TranslatorContainer = () => {
             body: JSON.stringify({text: translationRequest})
         });
         const data = await response.json();
-        console.log("Data:", data);
-        console.log("contents", data.contents);
-        console.log("translated", data.contents.translated);
         setTranslationResponse(data.contents.translated);
-        console.log(translationResponse);
     }
 
-    // useEffect(() => {
-    //     translateText("shakespeare", "heeellooo");
-    // }, [])
-
-       const translationRoutes = createBrowserRouter([
-      {
+    const translationRoutes = createBrowserRouter([{
         path: "/",
         element : <Home />,
         children: [
@@ -52,9 +43,7 @@ const TranslatorContainer = () => {
                 translateText={translateText}
                 translationResponse={translationResponse}
                 />
-
             },
-
             {
 
                 path: "/pirate",
@@ -78,15 +67,9 @@ const TranslatorContainer = () => {
                 translateText={translateText}
                 translationResponse={translationResponse}
                 />
-
             }
-
         ]
-
-
-      }
-
-       ])
+    }])
 
     return (  
         <>

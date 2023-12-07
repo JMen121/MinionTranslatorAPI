@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const TranslatorForm = ({translateText, language}) => {
 
-
     const [inputString, setInputString] = useState('');
 
     const handleChange = (event) => {
@@ -15,20 +14,18 @@ const TranslatorForm = ({translateText, language}) => {
         setInputString("");
     }
 
-
     return ( 
 
         <form onSubmit={handleFormSubmit}>
-
-        < input className="formTextBox"
-            name = "name"
-            type = "text"
-            value = {inputString}
-            placeholder="input text.."
-            onChange={handleChange} 
-        
-        />
-        <input type="submit" />
+            <input 
+                className="formTextBox"
+                name = "name"
+                type = "text"
+                value = {inputString}
+                placeholder="input text.."
+                onChange={handleChange} 
+            />
+            <input type="submit" />
         </form>
     );
 }
