@@ -6,9 +6,19 @@ const TranslatorForm = ({translateText}) => {
     const [inputString, setInputString] = useState('');
 
     return ( 
-        <>
-            <h2>This is a form</h2>
-        </> 
+      
+
+<form>
+
+ <label>Translation</label>
+ <input
+  name = "text"
+  type = "text"
+  placeholder="input text.."
+  
+/>
+<input type="submit" />
+</form>
     );
 }
  
