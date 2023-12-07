@@ -6,16 +6,16 @@ import pirate_img from '../images/johnny-depp.avif';
 const Home = () => {
     return ( 
       <>
-        <nav>
-          <li><Link to = "/homepage">Link to the home page</Link></li>
-            <li><Link to = "/shakespeare">Link to the Shakespearean Translator</Link></li>
-            <li><Link to = "/pirate">Link to the Pirate Translator</Link></li>
-            <li><Link to = "/minions">Link to the Minions Translator</Link></li>
+          <nav>
+            <Link to = "/homepage"><button className="nav-button">Home</button></Link>
+            <Link to = "/shakespeare"><button className="nav-button">Shakespearean Translator</button></Link>
+            <Link to = "/pirate"><button className="nav-button">Pirate Translator</button></Link>
+            <Link to = "/minions"><button className="nav-button">Minions Translator</button></Link>
           </nav>
-        <Outlet/>
-        {/* <img src={minion_img} alt="minion with flower" />
-        <img src={shakespeare_img} alt="Shakespeare looking cool" />
-        <img src={pirate_img} alt="Johnny Depp as a pirate" /> */}
+          <Outlet/>
+          {/* <img src={minion_img} alt="minion with flower" />
+          <img src={shakespeare_img} alt="Shakespeare looking cool" />
+          <img src={pirate_img} alt="Johnny Depp as a pirate" /> */}
       </>
      );
 }

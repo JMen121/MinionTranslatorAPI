@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../components/Home";
 import TranslatorComponent from "../components/TranslatorComponent";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import minion_img from '../images/Minions.png'
 import shakespeare_img from '../images/Funny-memes-Shakespeare.jpg'
 import pirate_img from '../images/johnny-depp.avif';

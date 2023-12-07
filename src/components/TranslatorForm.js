@@ -20,7 +20,6 @@ const TranslatorForm = ({translateText, language}) => {
 
         <form onSubmit={handleFormSubmit}>
 
-        <label>Translation</label>
         <input
             name = "name"
             type = "text"

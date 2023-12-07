@@ -4,7 +4,7 @@ const DisplayResponse = ({translationResponse}) => {
 
     return ( 
         <>
-            <h2>This is a response</h2>
+            <h2>Translation</h2>
             <h3>{translationResponse}</h3>
         </> 
     );
