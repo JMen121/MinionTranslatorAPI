@@ -17,8 +17,10 @@ const TranslatorContainer = () => {
         });
         const data = await response.json();
         console.log("Data:", data);
-        // setTranslationResponse(data.contents.translated);
-        // console.log(translationResponse);
+        console.log("contents", data.contents);
+        console.log("translated", data.contents.translated);
+        setTranslationResponse(data.contents.translated);
+        console.log(translationResponse);
     }
 
     // useEffect(() => {
@@ -38,6 +40,7 @@ const TranslatorContainer = () => {
                 language={"shakespeare"}
                 setLanguage={setLanguage}
                 translateText={translateText}
+                translationResponse={translationResponse}
                 />
 
             },
@@ -50,6 +53,7 @@ const TranslatorContainer = () => {
                 language={"pirate"}
                 setLanguage={setLanguage}
                 translateText={translateText}
+                translationResponse={translationResponse}
                 />
             },
             {
@@ -60,6 +64,7 @@ const TranslatorContainer = () => {
                 language={"minion"}
                 setLanguage={setLanguage}
                 translateText={translateText}
+                translationResponse={translationResponse}
                 />
 
             }
