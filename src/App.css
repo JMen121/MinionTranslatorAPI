@@ -1,3 +1,15 @@
 body {
   margin: 15px;
+  background-color: lightblue;
+}
+
+.titleOfWebpage{
+color: blue;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.allPictures{
+margin: 0px;
+contain: content;
 }

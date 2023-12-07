@@ -4,11 +4,17 @@ import pirate_img from '../images/johnny-depp.avif';
 
 const Homepage = () => {
     return ( 
-        <>
+        <div className='pictureContainer'>
+        <div className='pictures'>
             <img src={minion_img} alt="minion with flower" />
+        </div>
+        <div className='pictures'>
             <img src={shakespeare_img} alt="Shakespeare looking cool" />
+            </div>
+            <div className='pictures'>
             <img src={pirate_img} alt="Johnny Depp as a pirate" />
-        </>
+            </div>
+        </div>
      );
 }
  

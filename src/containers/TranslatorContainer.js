@@ -90,7 +90,7 @@ const TranslatorContainer = () => {
 
     return (  
         <>
-            <h2>This is a container</h2>
+            <h1 className="titleOfWebpage">The Translator App</h1>
             <RouterProvider router={translationRoutes} />
         </>
     );
