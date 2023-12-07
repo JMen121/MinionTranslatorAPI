@@ -19,19 +19,51 @@ body {
 .picture img {
   width: 100%;
   object-fit: contain;
+  display: block;
+  
 }
 
-.component-image {
-  height: 300px;
+nav{
+  text-align: center;
 }
+
 
 .nav-button {
   width: 15%;
   min-width: 180px;
   height: 30px;
   align-items: center;
+  justify-content: center;
 }
 
-nav {
-  
+.formTextBox{
+  width: 50%;
+  height:200px;
+  margin: 0% 0% 25% 25%;
+  /* margin-left: 170px; */
+  align-content: center;
+ display: block;
+ text-align: center;
+}
+
+.componentImageContainer{
+text-align: center;
+  width: 100%;
+  display: inline-block;
+  /* margin: 5% ; */
+  float: right;
+}
+
+.component-image {
+  height: 300px;
+  object-fit: contain;
+  display: block;
+ 
+}
+
+.title{
+text-align: center;
+text-decoration: solid;
+
+
 }
