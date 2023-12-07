@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import Home from "../components/Home";
+import TranslatorComponent from "../components/TranslatorComponent";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const TranslatorContainer = () => {
 
@@ -6,26 +9,58 @@ const TranslatorContainer = () => {
     const [translationResponse, setTranslationResponse] = useState('');
 
 
-    const translateText = async (language) => {
+    const translateText = async (language, translationRequest) => {
         const response = await fetch(`https://cors-anywhere.herokuapp.com/https://api.funtranslations.com/translate/${language}`, {
             method: "POST",
             headers: {"Content-Type":"application/json"},
-            body: JSON.stringify({text:"Welcome to the api"})
+            body: JSON.stringify({text: translationRequest})
         });
-        console.log("Response: ", response);
         const data = await response.json();
         console.log("Data:", data);
         // setTranslationResponse(data.contents.translated);
         // console.log(translationResponse);
     }
 
-    useEffect(() => {
-        translateText("shakespeare");
-    }, [])
+    // useEffect(() => {
+    //     translateText("shakespeare", "heeellooo");
+    // }, [])
+
+       const translationRoutes = createBrowserRouter([
+      {
+        path: "/",
+        element : <Home />,
+        children: [
+            {
+
+                path: "/shakespeare",
+                element: <TranslatorComponent />
+
+            },
+
+            {
+
+                path: "/pirate",
+                element: <TranslatorComponent />
+
+            },
+            {
+
+                path: "/minions",
+                element: <TranslatorComponent />
+
+            }
+
+        ]
+
+
+      }
+
+       ])
 
     return (  
         <>
             <h2>This is a container</h2>
+            <RouterProvider router={translationRoutes} />
         </>
     );
 }
