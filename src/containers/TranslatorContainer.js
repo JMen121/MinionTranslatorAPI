@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import Home from "../components/Home";
 import TranslatorComponent from "../components/TranslatorComponent";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import minion_img from '../images/Minions.png'
+import shakespeare_img from '../images/Funny-memes-Shakespeare.jpg'
+import pirate_img from '../images/johnny-depp.avif';
+
 
 const TranslatorContainer = () => {
 
@@ -37,6 +41,7 @@ const TranslatorContainer = () => {
                 path: "/shakespeare",
                 element: <TranslatorComponent 
                 title={"Shakespeare Translator"}
+                image={shakespeare_img}
                 language={"shakespeare"}
                 setLanguage={setLanguage}
                 translateText={translateText}
@@ -50,6 +55,7 @@ const TranslatorContainer = () => {
                 path: "/pirate",
                 element: <TranslatorComponent 
                 title={"Pirate Translator"}
+                image={pirate_img}
                 language={"pirate"}
                 setLanguage={setLanguage}
                 translateText={translateText}
@@ -61,6 +67,7 @@ const TranslatorContainer = () => {
                 path: "/minions",
                 element: <TranslatorComponent 
                 title={"Minion Translator"}
+                image={minion_img}
                 language={"minion"}
                 setLanguage={setLanguage}
                 translateText={translateText}

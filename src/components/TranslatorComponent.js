@@ -10,6 +10,7 @@ const TranslatorComponent = ({title, image, language, setLanguage, translateText
     return ( 
         <>
             <h2>{title}</h2>
+            <img src={image} alt="minion with flower" />
             <TranslatorForm 
                 translateText={translateText} 
                 language={language}

@@ -12,6 +12,7 @@ const TranslatorForm = ({translateText, language}) => {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         translateText(language, inputString);
+        setInputString("");
     }
 
 
