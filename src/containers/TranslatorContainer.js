@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import minion_img from '../images/Minions.png'
 import shakespeare_img from '../images/Funny-memes-Shakespeare.jpg'
 import pirate_img from '../images/johnny-depp.avif';
+import Homepage from "../components/Homepage";
 
 
 const TranslatorContainer = () => {
@@ -36,6 +37,10 @@ const TranslatorContainer = () => {
         path: "/",
         element : <Home />,
         children: [
+            {
+                path: "/homepage",
+                element: <Homepage />
+            },
             {
 
                 path: "/shakespeare",
