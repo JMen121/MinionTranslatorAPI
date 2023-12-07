@@ -1,9 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import TranslatorContainer from './containers/TranslatorContainer';
 
 function App() {
   return (
-  
+      <>
+        <TranslatorContainer />
+      </>
   );
 } 
 
