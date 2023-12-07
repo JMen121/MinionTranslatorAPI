@@ -1,6 +1,7 @@
 body {
   margin: 15px;
   background-color: lightblue;
+  text-align: center;
 }
 
   .titleOfWebpage {
@@ -19,7 +20,6 @@ body {
 .picture img {
   width: 100%;
   object-fit: contain;
-  display: block;
   
 }
 
@@ -56,9 +56,7 @@ text-align: center;
 
 .component-image {
   height: 300px;
-  object-fit: contain;
-  display: block;
- 
+  object-fit: contain; 
 }
 
 .title{
